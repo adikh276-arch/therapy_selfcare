@@ -752,7 +752,13 @@ export function SelfCareResources() {
           >
             <div className="flex items-center gap-3 mb-2">
               <button
-                onClick={() => window.location.href = 'https://web.mantracare.com/therapy'}
+                onClick={() => {
+                  if (window.parent !== window) {
+                    window.parent.postMessage({ action: 'exit' }, 'https://web.mantracare.com');
+                  } else {
+                    window.location.href = 'https://web.mantracare.com/therapy';
+                  }
+                }}
                 className="flex items-center justify-center text-[#64748B] hover:text-[#043570] transition-colors"
               >
                 <ChevronLeft size={20} />
