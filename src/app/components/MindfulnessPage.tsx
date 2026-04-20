@@ -4,6 +4,8 @@ import { ArrowLeft, Calendar, CheckCircle, ChevronRight, ChevronLeft, Headphones
 import { motion } from "motion/react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { MobileAppModal } from "./MobileAppModal";
+import { Sidebar } from "./Sidebar";
+import { MobileNav } from "./MobileNav";
 
 export function MindfulnessPage() {
   const navigate = useNavigate();
@@ -91,9 +93,11 @@ export function MindfulnessPage() {
       {showMobileAppModal && <MobileAppModal onClose={() => setShowMobileAppModal(false)} />}
 
       <div className="flex min-h-screen bg-[#0a1628]">
+        <Sidebar />
+        <MobileNav />
         {/* Main Content */}
         <div className="flex-1 flex flex-col min-w-0">
-          <main className="max-w-[1000px] w-full mx-auto px-4 md:px-6 py-4 md:py-10 pt-10">
+          <main className="max-w-[1000px] w-full mx-auto px-4 md:px-6 py-4 md:py-10 pt-[72px] md:pt-10">
             {/* Service Header */}
             <motion.div
               className="mb-6 md:mb-8"

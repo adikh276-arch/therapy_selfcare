@@ -1,6 +1,5 @@
-import { useState } from "react";
-import { useNavigate } from "react-router";
-import { motion, AnimatePresence } from "motion/react";
+import { Sidebar } from "./Sidebar";
+import { MobileNav } from "./MobileNav";
 import { 
   ChevronLeft, 
   MessageCircle, 
@@ -496,8 +495,10 @@ export function SelfCareResources() {
 
   return (
     <div className="flex min-h-screen bg-[#F9FAFB]">
+      <Sidebar />
+      <MobileNav />
       <div className="flex-1 flex flex-col min-w-0">
-        <main className="max-w-[1000px] w-full mx-auto px-4 md:px-6 py-4 md:py-8 pt-8">
+        <main className="max-w-[1000px] w-full mx-auto px-4 md:px-6 py-4 md:py-8 pt-[72px] md:pt-8">
           <AnimatePresence mode="wait">
             {selectedTopic ? (() => {
               const topic = topicCards.find(t => t.id === selectedTopic)!;
@@ -569,41 +570,41 @@ export function SelfCareResources() {
                     <h2 className="font-semibold text-[#020817] mb-4" style={{ fontSize: '18px' }}>
                       Exercises
                     </h2>
-                      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                        {detail.exercises.map((ex, i) => {
-                          const ExIcon = ex.icon;
-                          const colors = [
-                            { bg: '#FFF7ED', border: '#FFEDD5', icon: '#F97316' },
-                            { bg: '#EFF6FF', border: '#DBEAFE', icon: '#3B82F6' },
-                            { bg: '#FDF2F8', border: '#FCE7F3', icon: '#EC4899' },
-                            { bg: '#F0FDF4', border: '#DCFCE7', icon: '#10B981' }
-                          ];
-                          const color = colors[i % colors.length];
-                          return (
-                            <motion.button
-                              key={ex.title}
-                              initial={{ opacity: 0, scale: 0.95 }}
-                              animate={{ opacity: 1, scale: 1 }}
-                              transition={{ delay: 0.15 + i * 0.05 }}
-                              whileHover={{ y: -2 }}
-                              whileTap={{ scale: 0.98 }}
-                              onClick={() => ex.url && (window.location.href = ex.url)}
-                              className="rounded-2xl p-4 border-2 transition-all hover:shadow-md flex flex-col items-center justify-center text-center h-28 md:h-32"
-                              style={{
-                                backgroundColor: color.bg,
-                                borderColor: color.border
-                              }}
-                            >
-                              <div className="w-9 h-9 rounded-xl flex items-center justify-center mb-2.5" style={{ backgroundColor: color.icon }}>
-                                <ExIcon size={18} className="text-white" strokeWidth={2.5} />
-                              </div>
-                              <h4 className="font-semibold text-[#020817] text-[11px] md:text-xs leading-tight line-clamp-2">
-                                {ex.title}
-                              </h4>
-                            </motion.button>
-                          );
-                        })}
-                      </div>
+                    <div className="flex gap-4 overflow-x-auto pb-2" style={{ scrollbarWidth: 'thin' }}>
+                      {detail.exercises.map((ex, i) => {
+                        const ExIcon = ex.icon;
+                        const colors = [
+                          { bg: '#FFF4ED', border: '#FECACA', icon: '#F97316' },
+                          { bg: '#EFF6FF', border: '#BFDBFE', icon: '#3B82F6' },
+                          { bg: '#FCE7F3', border: '#FBCFE8', icon: '#EC4899' },
+                          { bg: '#ECFDF5', border: '#A7F3D0', icon: '#10B981' }
+                        ];
+                        const color = colors[i % colors.length];
+                        return (
+                          <motion.button
+                            key={ex.title}
+                            initial={{ opacity: 0, x: -20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: 0.15 + i * 0.05 }}
+                            whileHover={{ y: -2 }}
+                            whileTap={{ scale: 0.95 }}
+                            onClick={() => ex.url && window.open(ex.url, '_blank')}
+                            className="flex-shrink-0 w-48 rounded-2xl p-4 border-2 transition-all hover:shadow-md"
+                            style={{
+                              backgroundColor: color.bg,
+                              borderColor: color.border
+                            }}
+                          >
+                            <div className="w-12 h-12 rounded-2xl flex items-center justify-center mb-3" style={{ backgroundColor: color.icon }}>
+                              <ExIcon size={20} className="text-white" strokeWidth={2} />
+                            </div>
+                            <p className="text-sm font-medium text-[#020817] text-left leading-snug">
+                              {ex.title}
+                            </p>
+                          </motion.button>
+                        );
+                      })}
+                    </div>
                   </motion.div>
 
                   {/* To Do's */}
@@ -634,20 +635,20 @@ export function SelfCareResources() {
                             transition={{ delay: 0.2 + i * 0.05 }}
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.98 }}
-                            onClick={() => todo.url && (window.location.href = todo.url)}
-                            className="border-2 rounded-xl p-3.5 flex items-center gap-3.5 hover:shadow-md transition-all group"
+                            onClick={() => todo.url && window.open(todo.url, '_blank')}
+                            className="border-2 rounded-2xl p-4 flex items-center gap-3 hover:shadow-md transition-all group"
                             style={{
                               backgroundColor: color.bg,
                               borderColor: color.border
                             }}
                           >
-                            <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style={{ backgroundColor: color.icon }}>
-                              <TodoIcon size={16} className="text-white" strokeWidth={2.5} />
+                            <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ backgroundColor: color.icon }}>
+                              <TodoIcon size={18} className="text-white" strokeWidth={2} />
                             </div>
-                            <span className="text-xs font-semibold text-[#020817] flex-1 text-left">
+                            <span className="text-sm font-medium text-[#020817] flex-1 text-left">
                               {todo.title}
                             </span>
-                            <ArrowRight size={14} className="text-[#64748B] group-hover:translate-x-1 transition-transform" />
+                            <ArrowRight size={16} className="text-[#64748B] group-hover:translate-x-1 transition-transform" />
                           </motion.button>
                         );
                       })}
@@ -790,14 +791,14 @@ export function SelfCareResources() {
                       whileTap={{ scale: 0.98 }}
                       onClick={() => {
                         if (tool.url) {
-                          window.location.href = tool.url;
+                          window.open(tool.url, '_blank');
                         }
                       }}
-                      className="rounded-2xl p-3 shadow-sm flex flex-col items-center justify-center text-center h-24 md:h-28"
+                      className="rounded-2xl p-5 shadow-sm flex flex-col items-start justify-between h-28"
                       style={{ background: tool.bgColor }}
                     >
-                      <IconComponent size={24} className="text-white mb-2" strokeWidth={2.5} />
-                      <h3 className="text-white font-semibold text-[10px] md:text-[11px] leading-tight">{tool.label}</h3>
+                      <IconComponent size={32} className="text-white mb-auto" strokeWidth={2} />
+                      <h3 className="text-white font-semibold text-xs text-left leading-tight">{tool.label}</h3>
                     </motion.button>
                   );
                 })}
@@ -832,15 +833,15 @@ export function SelfCareResources() {
                           setSelectedTopic(topic.id);
                         }
                       }}
-                      className="bg-white border border-[#E2E8F0] rounded-2xl p-4 hover:shadow-md transition-all text-center flex flex-col items-center justify-center h-32 md:h-36"
+                      className="bg-white border border-[#E2E8F0] rounded-2xl p-6 hover:shadow-md transition-all text-center"
                     >
                       <div 
-                        className="w-12 h-12 rounded-xl flex items-center justify-center mb-2.5 mx-auto"
+                        className="w-16 h-16 rounded-2xl flex items-center justify-center mb-4 mx-auto"
                         style={{ backgroundColor: topic.bgColor }}
                       >
-                        <IconComponent size={24} style={{ color: topic.iconColor }} strokeWidth={2.5} />
+                        <IconComponent size={28} style={{ color: topic.iconColor }} strokeWidth={2} />
                       </div>
-                      <h3 className="text-[#1E293B] font-semibold text-xs md:text-sm">{topic.label}</h3>
+                      <h3 className="text-[#1E293B] font-medium text-base">{topic.label}</h3>
                     </motion.button>
                   );
                 })}
