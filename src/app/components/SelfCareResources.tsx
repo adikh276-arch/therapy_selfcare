@@ -754,9 +754,9 @@ export function SelfCareResources() {
               <button
                 onClick={() => {
                   if (window.parent !== window) {
-                    window.parent.postMessage({ action: 'exit' }, 'https://web.mantracare.com');
+                    window.parent.postMessage({ action: 'exit' }, 'https://192.168.1.60:3000/therapy');
                   } else {
-                    window.location.href = 'https://web.mantracare.com/therapy';
+                    window.location.href = 'https://192.168.1.60:3000/therapy';
                   }
                 }}
                 className="flex items-center justify-center text-[#64748B] hover:text-[#043570] transition-colors"
