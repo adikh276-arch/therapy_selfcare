@@ -569,41 +569,41 @@ export function SelfCareResources() {
                     <h2 className="font-semibold text-[#020817] mb-4" style={{ fontSize: '18px' }}>
                       Exercises
                     </h2>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                      {detail.exercises.map((ex, i) => {
-                        const ExIcon = ex.icon;
-                        const colors = [
-                          { bg: '#FFF7ED', border: '#FFEDD5', icon: '#F97316' },
-                          { bg: '#EFF6FF', border: '#DBEAFE', icon: '#3B82F6' },
-                          { bg: '#FDF2F8', border: '#FCE7F3', icon: '#EC4899' },
-                          { bg: '#F0FDF4', border: '#DCFCE7', icon: '#10B981' }
-                        ];
-                        const color = colors[i % colors.length];
-                        return (
-                          <motion.button
-                            key={ex.title}
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: 0.15 + i * 0.05 }}
-                            whileHover={{ y: -4, scale: 1.02 }}
-                            whileTap={{ scale: 0.98 }}
-                            onClick={() => ex.url && (window.location.href = ex.url)}
-                            className="rounded-3xl p-6 border-2 transition-all hover:shadow-lg flex flex-col items-center justify-center text-center aspect-square md:aspect-auto md:min-h-[160px]"
-                            style={{
-                              backgroundColor: color.bg,
-                              borderColor: color.border
-                            }}
-                          >
-                            <div className="w-12 h-12 rounded-2xl flex items-center justify-center mb-4" style={{ backgroundColor: color.icon }}>
-                              <ExIcon size={24} className="text-white" strokeWidth={2.5} />
-                            </div>
-                            <h4 className="font-bold text-[#020817] text-sm md:text-base leading-tight">
-                              {ex.title}
-                            </h4>
-                          </motion.button>
-                        );
-                      })}
-                    </div>
+                      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        {detail.exercises.map((ex, i) => {
+                          const ExIcon = ex.icon;
+                          const colors = [
+                            { bg: '#FFF7ED', border: '#FFEDD5', icon: '#F97316' },
+                            { bg: '#EFF6FF', border: '#DBEAFE', icon: '#3B82F6' },
+                            { bg: '#FDF2F8', border: '#FCE7F3', icon: '#EC4899' },
+                            { bg: '#F0FDF4', border: '#DCFCE7', icon: '#10B981' }
+                          ];
+                          const color = colors[i % colors.length];
+                          return (
+                            <motion.button
+                              key={ex.title}
+                              initial={{ opacity: 0, scale: 0.95 }}
+                              animate={{ opacity: 1, scale: 1 }}
+                              transition={{ delay: 0.15 + i * 0.05 }}
+                              whileHover={{ y: -2 }}
+                              whileTap={{ scale: 0.98 }}
+                              onClick={() => ex.url && (window.location.href = ex.url)}
+                              className="rounded-2xl p-4 border-2 transition-all hover:shadow-md flex flex-col items-center justify-center text-center h-28 md:h-32"
+                              style={{
+                                backgroundColor: color.bg,
+                                borderColor: color.border
+                              }}
+                            >
+                              <div className="w-9 h-9 rounded-xl flex items-center justify-center mb-2.5" style={{ backgroundColor: color.icon }}>
+                                <ExIcon size={18} className="text-white" strokeWidth={2.5} />
+                              </div>
+                              <h4 className="font-semibold text-[#020817] text-[11px] md:text-xs leading-tight line-clamp-2">
+                                {ex.title}
+                              </h4>
+                            </motion.button>
+                          );
+                        })}
+                      </div>
                   </motion.div>
 
                   {/* To Do's */}
@@ -635,19 +635,19 @@ export function SelfCareResources() {
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.98 }}
                             onClick={() => todo.url && (window.location.href = todo.url)}
-                            className="border-2 rounded-2xl p-5 flex items-center gap-4 hover:shadow-md transition-all group"
+                            className="border-2 rounded-xl p-3.5 flex items-center gap-3.5 hover:shadow-md transition-all group"
                             style={{
                               backgroundColor: color.bg,
                               borderColor: color.border
                             }}
                           >
-                            <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style={{ backgroundColor: color.icon }}>
-                              <TodoIcon size={20} className="text-white" strokeWidth={2} />
+                            <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style={{ backgroundColor: color.icon }}>
+                              <TodoIcon size={16} className="text-white" strokeWidth={2.5} />
                             </div>
-                            <span className="text-base font-bold text-[#020817] flex-1 text-left">
+                            <span className="text-xs font-semibold text-[#020817] flex-1 text-left">
                               {todo.title}
                             </span>
-                            <ArrowRight size={18} className="text-[#64748B] group-hover:translate-x-1 transition-transform" />
+                            <ArrowRight size={14} className="text-[#64748B] group-hover:translate-x-1 transition-transform" />
                           </motion.button>
                         );
                       })}
@@ -793,11 +793,11 @@ export function SelfCareResources() {
                           window.location.href = tool.url;
                         }
                       }}
-                      className="rounded-2xl p-4 shadow-sm flex flex-col items-center justify-center aspect-square text-center h-28 md:h-32"
+                      className="rounded-2xl p-3 shadow-sm flex flex-col items-center justify-center text-center h-24 md:h-28"
                       style={{ background: tool.bgColor }}
                     >
-                      <IconComponent size={32} className="text-white mb-2" strokeWidth={2.5} />
-                      <h3 className="text-white font-bold text-[11px] md:text-xs leading-tight">{tool.label}</h3>
+                      <IconComponent size={24} className="text-white mb-2" strokeWidth={2.5} />
+                      <h3 className="text-white font-semibold text-[10px] md:text-[11px] leading-tight">{tool.label}</h3>
                     </motion.button>
                   );
                 })}
@@ -832,15 +832,15 @@ export function SelfCareResources() {
                           setSelectedTopic(topic.id);
                         }
                       }}
-                      className="bg-white border border-[#E2E8F0] rounded-2xl p-5 hover:shadow-md transition-all text-center flex flex-col items-center justify-center aspect-square md:aspect-[4/5]"
+                      className="bg-white border border-[#E2E8F0] rounded-2xl p-4 hover:shadow-md transition-all text-center flex flex-col items-center justify-center h-32 md:h-36"
                     >
                       <div 
-                        className="w-16 h-16 rounded-2xl flex items-center justify-center mb-4 mx-auto"
+                        className="w-12 h-12 rounded-xl flex items-center justify-center mb-2.5 mx-auto"
                         style={{ backgroundColor: topic.bgColor }}
                       >
-                        <IconComponent size={32} style={{ color: topic.iconColor }} strokeWidth={2.5} />
+                        <IconComponent size={24} style={{ color: topic.iconColor }} strokeWidth={2.5} />
                       </div>
-                      <h3 className="text-[#1E293B] font-bold text-base md:text-lg">{topic.label}</h3>
+                      <h3 className="text-[#1E293B] font-semibold text-xs md:text-sm">{topic.label}</h3>
                     </motion.button>
                   );
                 })}
