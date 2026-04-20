@@ -570,7 +570,7 @@ export function SelfCareResources() {
                     <h2 className="font-semibold text-[#020817] mb-4" style={{ fontSize: '18px' }}>
                       Exercises
                     </h2>
-                    <div className="flex gap-4 overflow-x-auto pb-2" style={{ scrollbarWidth: 'thin' }}>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                       {detail.exercises.map((ex, i) => {
                         const ExIcon = ex.icon;
                         const colors = [
@@ -589,7 +589,7 @@ export function SelfCareResources() {
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.95 }}
                             onClick={() => ex.url && (window.location.href = ex.url)}
-                            className="flex-shrink-0 w-48 rounded-2xl p-4 border-2 transition-all hover:shadow-md"
+                            className="w-full rounded-2xl p-4 border-2 transition-all hover:shadow-md"
                             style={{
                               backgroundColor: color.bg,
                               borderColor: color.border
