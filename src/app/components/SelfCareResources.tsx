@@ -833,7 +833,7 @@ export function SelfCareResources() {
                           setSelectedTopic(topic.id);
                         }
                       }}
-                      className="bg-white border border-[#E2E8F0] rounded-3xl p-8 hover:shadow-md transition-all text-center flex flex-col items-center justify-center min-h-[260px]"
+                      className="bg-white border border-[#E2E8F0] rounded-3xl p-6 hover:shadow-md transition-all text-center flex flex-col items-center justify-center aspect-[4/5]"
                     >
                       <div 
                         className="w-24 h-24 rounded-3xl flex items-center justify-center mb-6 mx-auto"
