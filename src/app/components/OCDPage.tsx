@@ -350,7 +350,7 @@ export function OCDPage() {
                     className="flex flex-col items-center gap-2"
                     onClick={() => {
                       if (tool.external) {
-                        window.open(tool.link, '_blank');
+                        window.location.href = tool.link;
                       } else {
                         navigate(tool.link);
                       }

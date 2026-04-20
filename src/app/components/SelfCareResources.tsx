@@ -354,7 +354,6 @@ const topicDetails: Record<string, {
       { title: "Brain Dump & Sort", icon: Brain, url: "http://web.mantracare.com/app/brain_dump_and_sort" },
       { title: "Energy Tracker", icon: Zap, url: "https://web.mantracare.com/app/energy_tracker" },
       { title: "Thought Shifts", icon: RefreshCw, url: "https://platform.mantracare.com/thought_shifts" },
-      { title: "Daily Self Care Tracker", icon: Heart, url: "https://web.mantracare.com/app/daily_self_care_tracker" },
     ],
     resources: [
       { title: "Articles", count: 20, icon: Newspaper, url: "https://platform.mantracare.com/ptsd_articles/?lang=en" },
@@ -589,7 +588,7 @@ export function SelfCareResources() {
                             transition={{ delay: 0.15 + i * 0.05 }}
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.95 }}
-                            onClick={() => ex.url && window.open(ex.url, '_blank')}
+                            onClick={() => ex.url && (window.location.href = ex.url)}
                             className="flex-shrink-0 w-48 rounded-2xl p-4 border-2 transition-all hover:shadow-md"
                             style={{
                               backgroundColor: color.bg,
@@ -636,7 +635,7 @@ export function SelfCareResources() {
                             transition={{ delay: 0.2 + i * 0.05 }}
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.98 }}
-                            onClick={() => todo.url && window.open(todo.url, '_blank')}
+                            onClick={() => todo.url && (window.location.href = todo.url)}
                             className="border-2 rounded-2xl p-4 flex items-center gap-3 hover:shadow-md transition-all group"
                             style={{
                               backgroundColor: color.bg,
@@ -792,7 +791,7 @@ export function SelfCareResources() {
                       whileTap={{ scale: 0.98 }}
                       onClick={() => {
                         if (tool.url) {
-                          window.open(tool.url, '_blank');
+                          window.location.href = tool.url;
                         }
                       }}
                       className="rounded-2xl p-5 shadow-sm flex flex-col items-start justify-between h-28"

@@ -178,7 +178,7 @@ export function OCDSelfCare() {
                           if (tool.url.startsWith('/')) {
                             navigate(tool.url);
                           } else {
-                            window.open(tool.url, '_blank');
+                            window.location.href = tool.url;
                           }
                         }
                       }}
@@ -219,7 +219,7 @@ export function OCDSelfCare() {
                           if (topic.url.startsWith('/')) {
                             navigate(topic.url);
                           } else {
-                            window.open(topic.url, '_blank');
+                            window.location.href = topic.url;
                           }
                         }
                       }}
@@ -264,7 +264,7 @@ export function OCDSelfCare() {
                           if (guide.url.startsWith('/')) {
                             navigate(guide.url);
                           } else {
-                            window.open(guide.url, '_blank');
+                            window.location.href = guide.url;
                           }
                         }
                       }}
