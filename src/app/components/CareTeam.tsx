@@ -10,7 +10,6 @@ import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Badge } from "./ui/badge";
 import { ScrollArea } from "./ui/scroll-area";
 import { Separator } from "./ui/separator";
-import { Sidebar } from "./Sidebar";
 import { MobileNav } from "./MobileNav";
 
 interface Expert {
@@ -695,7 +694,6 @@ export function CareTeam() {
 
   return (
     <div className="flex min-h-screen bg-[#F9FAFB]">
-      <Sidebar />
       <MobileNav />
       <div className="flex-1 flex flex-col min-w-0">
         <main className="flex-1 flex">

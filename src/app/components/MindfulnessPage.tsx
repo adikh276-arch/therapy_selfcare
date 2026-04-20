@@ -4,7 +4,6 @@ import { ArrowLeft, Calendar, CheckCircle, ChevronRight, ChevronLeft, Headphones
 import { motion } from "motion/react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { MobileAppModal } from "./MobileAppModal";
-import { Sidebar } from "./Sidebar";
 import { MobileNav } from "./MobileNav";
 
 export function MindfulnessPage() {
@@ -93,7 +92,6 @@ export function MindfulnessPage() {
       {showMobileAppModal && <MobileAppModal onClose={() => setShowMobileAppModal(false)} />}
 
       <div className="flex min-h-screen bg-[#0a1628]">
-        <Sidebar />
         <MobileNav />
         {/* Main Content */}
         <div className="flex-1 flex flex-col min-w-0">

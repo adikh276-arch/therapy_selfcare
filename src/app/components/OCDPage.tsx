@@ -4,7 +4,6 @@ import { Calendar, MessageCircle, CheckCircle, ChevronRight, ChevronLeft, Sparkl
 import { motion } from "motion/react";
 import { MobileAppModal } from "./MobileAppModal";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import { Sidebar } from "./Sidebar";
 import { MobileNav } from "./MobileNav";
 
 export function OCDPage() {
@@ -97,7 +96,6 @@ export function OCDPage() {
   return (
     <>
       <div className="flex min-h-screen bg-[#F9FAFB]">
-        <Sidebar />
         <MobileNav />
         {/* Main Content */}
         <div className="flex-1 flex flex-col min-w-0">

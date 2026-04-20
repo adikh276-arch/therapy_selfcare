@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { motion, AnimatePresence } from "motion/react";
-import { Sidebar } from "./Sidebar";
 import { MobileNav } from "./MobileNav";
 import { 
   ChevronLeft, 
@@ -498,7 +497,6 @@ export function SelfCareResources() {
 
   return (
     <div className="flex min-h-screen bg-[#F9FAFB]">
-      <Sidebar />
       <MobileNav />
       <div className="flex-1 flex flex-col min-w-0">
         <main className="max-w-[1000px] w-full mx-auto px-4 md:px-6 py-4 md:py-8 pt-[72px] md:pt-8">
