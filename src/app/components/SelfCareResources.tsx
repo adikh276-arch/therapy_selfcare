@@ -136,10 +136,10 @@ const topicDetails: Record<string, {
       { title: "Letter to Self", icon: Mail, url: "https://web.mantracare.com/app/letter_to_self" },
     ],
     resources: [
-      { title: "Articles", count: 24, icon: Newspaper, url: "https://platform.mantracare.com/depression_articles/?lang=en" },
-      { title: "Tips", count: 18, icon: Lightbulb, url: "https://platform.mantracare.com/depression_tips/?lang=en" },
-      { title: "Stories", count: 12, icon: BookMarked, url: "https://platform.mantracare.com/depression_stories/?lang=en" },
-      { title: "Myths", count: 8, icon: HelpCircle, url: "https://platform.mantracare.com/depression_myths/?lang=en" },
+      { title: "Articles", count: 35, icon: Newspaper, url: "https://platform.mantracare.com/depression_articles/?lang=en" },
+      { title: "Tips", count: 25, icon: Lightbulb, url: "https://platform.mantracare.com/depression_tips/?lang=en" },
+      { title: "Stories", count: 18, icon: BookMarked, url: "https://platform.mantracare.com/depression_stories/?lang=en" },
+      { title: "Myths", count: 12, icon: HelpCircle, url: "https://platform.mantracare.com/depression_myths/?lang=en" },
     ],
   },
   anxiety: {
@@ -501,8 +501,7 @@ export function SelfCareResources() {
           <AnimatePresence mode="wait">
             {selectedTopic ? (() => {
               const topic = topicCards.find(t => t.id === selectedTopic)!;
-              const detail = topicDetails[selectedTopic] || defaultDetail;
-              const TopicIcon = topic.icon;
+              const detail = topicDetails[selectedTopic];
               return (
                 <motion.div
                   key="topic-detail"
@@ -570,37 +569,37 @@ export function SelfCareResources() {
                     <h2 className="font-semibold text-[#020817] mb-4" style={{ fontSize: '18px' }}>
                       Exercises
                     </h2>
-                    <div className="flex gap-4 overflow-x-auto pb-2" style={{ scrollbarWidth: 'thin' }}>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                       {detail.exercises.map((ex, i) => {
                         const ExIcon = ex.icon;
                         const colors = [
-                          { bg: '#FFF4ED', border: '#FECACA', icon: '#F97316' },
-                          { bg: '#EFF6FF', border: '#BFDBFE', icon: '#3B82F6' },
-                          { bg: '#FCE7F3', border: '#FBCFE8', icon: '#EC4899' },
-                          { bg: '#ECFDF5', border: '#A7F3D0', icon: '#10B981' }
+                          { bg: '#FFF7ED', border: '#FFEDD5', icon: '#F97316' },
+                          { bg: '#EFF6FF', border: '#DBEAFE', icon: '#3B82F6' },
+                          { bg: '#FDF2F8', border: '#FCE7F3', icon: '#EC4899' },
+                          { bg: '#F0FDF4', border: '#DCFCE7', icon: '#10B981' }
                         ];
                         const color = colors[i % colors.length];
                         return (
                           <motion.button
                             key={ex.title}
-                            initial={{ opacity: 0, x: -20 }}
-                            animate={{ opacity: 1, x: 0 }}
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            animate={{ opacity: 1, scale: 1 }}
                             transition={{ delay: 0.15 + i * 0.05 }}
-                            whileHover={{ y: -2 }}
-                            whileTap={{ scale: 0.95 }}
+                            whileHover={{ y: -4, scale: 1.02 }}
+                            whileTap={{ scale: 0.98 }}
                             onClick={() => ex.url && (window.location.href = ex.url)}
-                            className="flex-shrink-0 w-64 rounded-2xl p-6 border-2 transition-all hover:shadow-md"
+                            className="rounded-3xl p-6 border-2 transition-all hover:shadow-lg flex flex-col items-center justify-center text-center aspect-square md:aspect-auto md:min-h-[160px]"
                             style={{
                               backgroundColor: color.bg,
                               borderColor: color.border
                             }}
                           >
-                            <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5" style={{ backgroundColor: color.icon }}>
-                              <ExIcon size={24} className="text-white" strokeWidth={2} />
+                            <div className="w-12 h-12 rounded-2xl flex items-center justify-center mb-4" style={{ backgroundColor: color.icon }}>
+                              <ExIcon size={24} className="text-white" strokeWidth={2.5} />
                             </div>
-                            <p className="text-lg font-semibold text-[#020817] text-left leading-tight">
+                            <h4 className="font-bold text-[#020817] text-sm md:text-base leading-tight">
                               {ex.title}
-                            </p>
+                            </h4>
                           </motion.button>
                         );
                       })}
@@ -636,19 +635,19 @@ export function SelfCareResources() {
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.98 }}
                             onClick={() => todo.url && (window.location.href = todo.url)}
-                            className="border-2 rounded-2xl p-6 flex items-center gap-4 hover:shadow-md transition-all group"
+                            className="border-2 rounded-2xl p-5 flex items-center gap-4 hover:shadow-md transition-all group"
                             style={{
                               backgroundColor: color.bg,
                               borderColor: color.border
                             }}
                           >
-                            <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ backgroundColor: color.icon }}>
-                              <TodoIcon size={24} className="text-white" strokeWidth={2} />
+                            <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style={{ backgroundColor: color.icon }}>
+                              <TodoIcon size={20} className="text-white" strokeWidth={2} />
                             </div>
-                            <span className="text-lg font-semibold text-[#020817] flex-1 text-left">
+                            <span className="text-base font-bold text-[#020817] flex-1 text-left">
                               {todo.title}
                             </span>
-                            <ArrowRight size={20} className="text-[#64748B] group-hover:translate-x-1 transition-transform" />
+                            <ArrowRight size={18} className="text-[#64748B] group-hover:translate-x-1 transition-transform" />
                           </motion.button>
                         );
                       })}
@@ -794,11 +793,11 @@ export function SelfCareResources() {
                           window.location.href = tool.url;
                         }
                       }}
-                      className="rounded-3xl p-6 shadow-sm flex flex-col items-center justify-center aspect-square text-center"
+                      className="rounded-2xl p-4 shadow-sm flex flex-col items-center justify-center aspect-square text-center h-28 md:h-32"
                       style={{ background: tool.bgColor }}
                     >
-                      <IconComponent size={44} className="text-white mb-4" strokeWidth={2} />
-                      <h3 className="text-white font-semibold text-sm leading-tight">{tool.label}</h3>
+                      <IconComponent size={32} className="text-white mb-2" strokeWidth={2.5} />
+                      <h3 className="text-white font-bold text-[11px] md:text-xs leading-tight">{tool.label}</h3>
                     </motion.button>
                   );
                 })}
@@ -833,15 +832,15 @@ export function SelfCareResources() {
                           setSelectedTopic(topic.id);
                         }
                       }}
-                      className="bg-white border border-[#E2E8F0] rounded-3xl p-6 hover:shadow-md transition-all text-center flex flex-col items-center justify-center aspect-[4/5]"
+                      className="bg-white border border-[#E2E8F0] rounded-2xl p-5 hover:shadow-md transition-all text-center flex flex-col items-center justify-center aspect-square md:aspect-[4/5]"
                     >
                       <div 
-                        className="w-24 h-24 rounded-3xl flex items-center justify-center mb-6 mx-auto"
+                        className="w-16 h-16 rounded-2xl flex items-center justify-center mb-4 mx-auto"
                         style={{ backgroundColor: topic.bgColor }}
                       >
-                        <IconComponent size={44} style={{ color: topic.iconColor }} strokeWidth={2} />
+                        <IconComponent size={32} style={{ color: topic.iconColor }} strokeWidth={2.5} />
                       </div>
-                      <h3 className="text-[#1E293B] font-bold text-xl">{topic.label}</h3>
+                      <h3 className="text-[#1E293B] font-bold text-base md:text-lg">{topic.label}</h3>
                     </motion.button>
                   );
                 })}
