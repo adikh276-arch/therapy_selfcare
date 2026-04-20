@@ -1,3 +1,6 @@
+import { useState } from "react";
+import { useNavigate } from "react-router";
+import { motion, AnimatePresence } from "motion/react";
 import { Sidebar } from "./Sidebar";
 import { MobileNav } from "./MobileNav";
 import { 
