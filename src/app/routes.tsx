@@ -18,8 +18,8 @@ import { DailyProgramPage } from "./components/DailyProgramPage";
 import { CareTeam } from "./components/CareTeam";
 
 export const router = createBrowserRouter([
-  { path: "/", element: <SelfCareResources /> },
-  { path: "/self-care", element: <Navigate to="/" replace /> },
+  { index: true, element: <SelfCareResources /> },
+  { path: "self-care", element: <Navigate to="/" replace /> },
   { path: "/service/meditation", element: <MindfulnessPage /> },
   { path: "/ocd", element: <OCDPage /> },
   { path: "/mindfulness-self-care", element: <MindfulnessSelfCare /> },

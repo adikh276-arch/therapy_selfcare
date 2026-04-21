@@ -4,22 +4,18 @@ import { router } from "./routes";
 import { AppBetterPopup } from "./components/AppBetterPopup";
 
 function App() {
-  const [showAppPopup, setShowAppPopup] = useState(false);
-
-  useEffect(() => {
-    // Check if user is logged in and should see the popup
+  const [showAppPopup, setShowAppPopup] = useState(() => {
     const userString = localStorage.getItem("mantraUser");
     if (userString) {
       try {
         const user = JSON.parse(userString);
-        if (user.showAppPopup !== false) {
-          setShowAppPopup(true);
-        }
+        return user.showAppPopup !== false;
       } catch (e) {
         console.error("Failed to parse user from localStorage", e);
       }
     }
-  }, []);
+    return false;
+  });
 
   const handleClosePopup = () => {
     setShowAppPopup(false);
