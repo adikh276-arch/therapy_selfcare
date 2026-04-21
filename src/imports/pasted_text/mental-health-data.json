@@ -2,7 +2,7 @@
 [
   {"name":"Depression","slug":"depression",
     "exercises":[
-      {"title":"5-4-3-2-1 Grounding","url":"http://platform.mantracare.com/5-4-3-2-1-grounding"},
+      {"title":"5-4-3-2-1 Grounding","url":"https://platform.mantracare.com/5-4-3-2-1-grounding"},
       {"title":"Guided Imagery","url":"https://platform.mantracare.com/guided_imagery/?lang=en"},
       {"title":"Affirmations","url":"https://platform.mantracare.com/affirmations/?lang=en"},
       {"title":"Joyful Activities","url":"https://platform.mantracare.com/joyful_activities/?lang=en"}
@@ -25,7 +25,7 @@
     "exercises":[
       {"title":"Box Breathing","url":"https://platform.mantracare.com/box_breathing/?lang=en"},
       {"title":"4-6-8 Breathing","url":"https://platform.mantracare.com/4_6_8_breathing/"},
-      {"title":"Grounded Technique","url":"http://platform.mantracare.com/grounded_technique"},
+      {"title":"Grounded Technique","url":"https://platform.mantracare.com/grounded_technique"},
       {"title":"Diffusion Techniques","url":"https://platform.mantracare.com/diffusion_techniques/"}
     ],
     "todos":[
@@ -47,7 +47,7 @@
       {"title":"Box Breathing","url":"https://platform.mantracare.com/box_breathing/?lang=en"},
       {"title":"Guided Imagery","url":"https://platform.mantracare.com/guided_imagery/?lang=en"},
       {"title":"Doodle Burst","url":"https://web.mantracare.com/app/doodle_burst"},
-      {"title":"Grounding","url":"http://platform.mantracare.com/5-4-3-2-1-grounding"}
+      {"title":"Grounding","url":"https://platform.mantracare.com/5-4-3-2-1-grounding"}
     ],
     "todos":[
       {"title":"Energy Tracker","url":"https://web.mantracare.com/app/energy_tracker"},
@@ -92,7 +92,7 @@
       {"title":"Thought Shifts","url":"https://platform.mantracare.com/thought_shifts"}
     ],
     "todos":[
-      {"title":"Know Your Values","url":"http://web.mantracare.com/app/know_your_values/"},
+      {"title":"Know Your Values","url":"https://web.mantracare.com/app/know_your_values/"},
       {"title":"Gratitude Tracker","url":"https://web.mantracare.com/app/gratitude_tracker"},
       {"title":"Brain Dump & Sort","url":"https://web.mantracare.com/app/brain_dump_and_sort"},
       {"title":"Personal Mission Statement","url":"https://web.mantracare.com/app/personal_mission_statement"}
@@ -131,7 +131,7 @@
       {"title":"4-6-8 Breathing","url":"https://platform.mantracare.com/4_6_8_breathing/"},
       {"title":"Box Breathing","url":"https://platform.mantracare.com/box_breathing/?lang=en"},
       {"title":"Guided Imagery","url":"https://platform.mantracare.com/guided_imagery/?lang=en"},
-      {"title":"Grounding","url":"http://platform.mantracare.com/5-4-3-2-1-grounding"}
+      {"title":"Grounding","url":"https://platform.mantracare.com/5-4-3-2-1-grounding"}
     ],
     "todos":[
       {"title":"Sleep Tracker","url":"https://web.mantracare.com/app/sleep_tracker"},
@@ -152,7 +152,7 @@
       {"title":"Pause for Appreciation","url":"https://platform.mantracare.com/pause_for_appreciation?lang=en"},
       {"title":"Guided Imagery","url":"https://platform.mantracare.com/guided_imagery/?lang=en"},
       {"title":"Affirmations","url":"https://platform.mantracare.com/affirmations/?lang=en"},
-      {"title":"Grounding","url":"http://platform.mantracare.com/5-4-3-2-1-grounding"}
+      {"title":"Grounding","url":"https://platform.mantracare.com/5-4-3-2-1-grounding"}
     ],
     "todos":[
       {"title":"Gratitude Tracker","url":"https://web.mantracare.com/app/gratitude_tracker"},
@@ -171,7 +171,7 @@
   {"name":"Anger","slug":"anger",
     "exercises":[
       {"title":"Box Breathing","url":"https://platform.mantracare.com/box_breathing/?lang=en"},
-      {"title":"Grounding","url":"http://platform.mantracare.com/5-4-3-2-1-grounding"},
+      {"title":"Grounding","url":"https://platform.mantracare.com/5-4-3-2-1-grounding"},
       {"title":"Diffusion Techniques","url":"https://platform.mantracare.com/diffusion_techniques/"},
       {"title":"Doodle Burst","url":"https://web.mantracare.com/app/doodle_burst"}
     ],
@@ -193,7 +193,7 @@
     "exercises":[
       {"title":"Letter to Self","url":"https://web.mantracare.com/app/letter_to_self"},
       {"title":"Guided Imagery","url":"https://platform.mantracare.com/guided_imagery/?lang=en"},
-      {"title":"Grounding","url":"http://platform.mantracare.com/5-4-3-2-1-grounding"},
+      {"title":"Grounding","url":"https://platform.mantracare.com/5-4-3-2-1-grounding"},
       {"title":"Affirmations","url":"https://platform.mantracare.com/affirmations/?lang=en"}
     ],
     "todos":[
@@ -212,7 +212,7 @@
 
   {"name":"PTSD","slug":"ptsd",
     "exercises":[
-      {"title":"Grounded Technique","url":"http://platform.mantracare.com/grounded_technique"},
+      {"title":"Grounded Technique","url":"https://platform.mantracare.com/grounded_technique"},
       {"title":"Box Breathing","url":"https://platform.mantracare.com/box_breathing/?lang=en"},
       {"title":"Diffusion Techniques","url":"https://platform.mantracare.com/diffusion_techniques/"},
       {"title":"Guided Imagery","url":"https://platform.mantracare.com/guided_imagery/?lang=en"}
@@ -240,7 +240,7 @@
     ],
     "todos":[
       {"title":"Letter to Self","url":"https://web.mantracare.com/app/letter_to_self"},
-      {"title":"Know Your Values","url":"http://web.mantracare.com/app/know_your_values/"},
+      {"title":"Know Your Values","url":"https://web.mantracare.com/app/know_your_values/"},
       {"title":"Gratitude Tracker","url":"https://web.mantracare.com/app/gratitude_tracker"},
       {"title":"Brain Dump & Sort","url":"https://web.mantracare.com/app/brain_dump_and_sort"}
     ],
@@ -257,7 +257,7 @@
       {"title":"Guided Imagery","url":"https://platform.mantracare.com/guided_imagery/?lang=en"},
       {"title":"Affirmations","url":"https://platform.mantracare.com/affirmations/?lang=en"},
       {"title":"Box Breathing","url":"https://platform.mantracare.com/box_breathing/?lang=en"},
-      {"title":"Grounding","url":"http://platform.mantracare.com/5-4-3-2-1-grounding"}
+      {"title":"Grounding","url":"https://platform.mantracare.com/5-4-3-2-1-grounding"}
     ],
     "todos":[
       {"title":"Energy Tracker","url":"https://web.mantracare.com/app/energy_tracker"},
@@ -281,7 +281,7 @@
       {"title":"Letter to Self","url":"https://web.mantracare.com/app/letter_to_self"}
     ],
     "todos":[
-      {"title":"Know Your Values","url":"http://web.mantracare.com/app/know_your_values/"},
+      {"title":"Know Your Values","url":"https://web.mantracare.com/app/know_your_values/"},
       {"title":"Brain Dump & Sort","url":"https://web.mantracare.com/app/brain_dump_and_sort"},
       {"title":"Vibe Tracker","url":"https://web.mantracare.com/app/vibe_tracker"},
       {"title":"Gratitude Tracker","url":"https://web.mantracare.com/app/gratitude_tracker"}
@@ -296,7 +296,7 @@
 
   {"name":"Eating Disorder","slug":"eating_disorder",
     "exercises":[
-      {"title":"Grounding","url":"http://platform.mantracare.com/5-4-3-2-1-grounding"},
+      {"title":"Grounding","url":"https://platform.mantracare.com/5-4-3-2-1-grounding"},
       {"title":"Diffusion Techniques","url":"https://platform.mantracare.com/diffusion_techniques/"},
       {"title":"Affirmations","url":"https://platform.mantracare.com/affirmations/?lang=en"},
       {"title":"Guided Imagery","url":"https://platform.mantracare.com/guided_imagery/?lang=en"}
@@ -318,7 +318,7 @@
   {"name":"OCD","slug":"ocd",
     "exercises":[
       {"title":"Diffusion Techniques","url":"https://platform.mantracare.com/diffusion_techniques/"},
-      {"title":"Grounded Technique","url":"http://platform.mantracare.com/grounded_technique"},
+      {"title":"Grounded Technique","url":"https://platform.mantracare.com/grounded_technique"},
       {"title":"Box Breathing","url":"https://platform.mantracare.com/box_breathing/?lang=en"},
       {"title":"Thought Shifts","url":"https://platform.mantracare.com/thought_shifts"}
     ],

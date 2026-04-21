@@ -125,7 +125,7 @@ const topicDetails: Record<string, {
     description: "Evidence-based exercises and resources to help you manage depression symptoms and build resilience.",
     guidedSeriesUrl: "https://app.mantracare.com/therapy/depression/depr-guided-series/",
     exercises: [
-      { title: "5-4-3-2-1 Grounding", icon: Compass, url: "http://platform.mantracare.com/5-4-3-2-1-grounding" },
+      { title: "5-4-3-2-1 Grounding", icon: Compass, url: "https://platform.mantracare.com/5-4-3-2-1-grounding" },
       { title: "Guided Imagery", icon: Play, url: "https://web.mantracare.com/mindfulness/media/203/1" },
       { title: "Affirmations", icon: Smile, url: "https://platform.mantracare.com/affirmations/?lang=en" },
       { title: "Joyful Activities", icon: Sparkles, url: "https://platform.mantracare.com/joyful_activities/?lang=en" },
@@ -133,7 +133,7 @@ const topicDetails: Record<string, {
     todos: [
       { title: "Gratitude Tracker", icon: Star, url: "https://web.mantracare.com/app/gratitude_tracker" },
       { title: "Daily Self Care Tracker", icon: Heart, url: "https://web.mantracare.com/app/daily_self_care_tracker" },
-      { title: "Brain Dump & Sort", icon: Brain, url: "http://web.mantracare.com/app/brain_dump_and_sort" },
+      { title: "Brain Dump & Sort", icon: Brain, url: "https://web.mantracare.com/app/brain_dump_and_sort" },
       { title: "Letter to Self", icon: Mail, url: "https://web.mantracare.com/app/letter_to_self" },
     ],
     resources: [
@@ -149,12 +149,12 @@ const topicDetails: Record<string, {
     exercises: [
       { title: "Box Breathing", icon: Wind, url: "https://platform.mantracare.com/box_breathing/?lang=en" },
       { title: "4-6-8 Breathing", icon: Play, url: "https://platform.mantracare.com/4_6_8_breathing/" },
-      { title: "Grounded Technique", icon: Compass, url: "http://platform.mantracare.com/grounded_technique" },
+      { title: "Grounded Technique", icon: Compass, url: "https://platform.mantracare.com/grounded_technique" },
       { title: "Diffusion Techniques", icon: Brain, url: "https://platform.mantracare.com/diffusion_techniques/" },
     ],
     todos: [
       { title: "Vibe Tracker", icon: TrendingUp, url: "https://web.mantracare.com/app/vibe_tracker" },
-      { title: "Brain Dump & Sort", icon: Brain, url: "http://web.mantracare.com/app/brain_dump_and_sort" },
+      { title: "Brain Dump & Sort", icon: Brain, url: "https://web.mantracare.com/app/brain_dump_and_sort" },
       { title: "Thought Shifts", icon: RefreshCw, url: "https://platform.mantracare.com/thought_shifts" },
       { title: "Daily Self Care Tracker", icon: Heart, url: "https://web.mantracare.com/app/daily_self_care_tracker" },
     ],
@@ -172,12 +172,12 @@ const topicDetails: Record<string, {
       { title: "Box Breathing", icon: Wind, url: "https://platform.mantracare.com/box_breathing/?lang=en" },
       { title: "Guided Imagery", icon: Play, url: "https://web.mantracare.com/mindfulness/media/203/1" },
       { title: "Doodle Burst", icon: Pen, url: "https://web.mantracare.com/app/doodle_burst" },
-      { title: "Grounding", icon: Compass, url: "http://platform.mantracare.com/5-4-3-2-1-grounding" },
+      { title: "Grounding", icon: Compass, url: "https://platform.mantracare.com/5-4-3-2-1-grounding" },
     ],
     todos: [
       { title: "Energy Tracker", icon: Zap, url: "https://web.mantracare.com/app/energy_tracker" },
       { title: "Daily Self Care Tracker", icon: Heart, url: "https://web.mantracare.com/app/daily_self_care_tracker" },
-      { title: "Brain Dump & Sort", icon: Brain, url: "http://web.mantracare.com/app/brain_dump_and_sort" },
+      { title: "Brain Dump & Sort", icon: Brain, url: "https://web.mantracare.com/app/brain_dump_and_sort" },
       { title: "Environment Optimization", icon: Compass, url: "https://platform.mantracare.com/environment_optimization/?lang=en" },
     ],
     resources: [
@@ -194,13 +194,13 @@ const topicDetails: Record<string, {
       { title: "4-6-8 Breathing", icon: Play, url: "https://platform.mantracare.com/4_6_8_breathing/" },
       { title: "Box Breathing", icon: Wind, url: "https://platform.mantracare.com/box_breathing/?lang=en" },
       { title: "Guided Imagery", icon: Play, url: "https://web.mantracare.com/mindfulness/media/203/1" },
-      { title: "Grounding", icon: Compass, url: "http://platform.mantracare.com/5-4-3-2-1-grounding" },
+      { title: "Grounding", icon: Compass, url: "https://platform.mantracare.com/5-4-3-2-1-grounding" },
     ],
     todos: [
       { title: "Sleep Tracker", icon: Moon, url: "https://web.mantracare.com/app/sleep_tracker" },
       { title: "Energy Tracker", icon: Zap, url: "https://web.mantracare.com/app/energy_tracker" },
       { title: "Daily Self Care Tracker", icon: Heart, url: "https://web.mantracare.com/app/daily_self_care_tracker" },
-      { title: "Brain Dump & Sort", icon: Brain, url: "http://web.mantracare.com/app/brain_dump_and_sort" },
+      { title: "Brain Dump & Sort", icon: Brain, url: "https://web.mantracare.com/app/brain_dump_and_sort" },
     ],
     resources: [
       { title: "Articles", count: 20, icon: Newspaper, url: "https://platform.mantracare.com/sleep_articles/?lang=en" },
@@ -222,7 +222,7 @@ const topicDetails: Record<string, {
       { title: "Vibe Tracker", icon: TrendingUp, url: "https://web.mantracare.com/app/vibe_tracker" },
       { title: "Gratitude Tracker", icon: Star, url: "https://web.mantracare.com/app/gratitude_tracker" },
       { title: "Daily Self Care Tracker", icon: Heart, url: "https://web.mantracare.com/app/daily_self_care_tracker" },
-      { title: "Brain Dump & Sort", icon: Brain, url: "http://web.mantracare.com/app/brain_dump_and_sort" },
+      { title: "Brain Dump & Sort", icon: Brain, url: "https://web.mantracare.com/app/brain_dump_and_sort" },
     ],
     resources: [
       { title: "Articles", count: 18, icon: Newspaper, url: "https://platform.mantracare.com/adolescent_articles/?lang=en" },
@@ -240,9 +240,9 @@ const topicDetails: Record<string, {
       { title: "Thought Shifts", icon: RefreshCw, url: "https://platform.mantracare.com/thought_shifts" },
     ],
     todos: [
-      { title: "Know Your Values", icon: Target, url: "http://web.mantracare.com/app/know_your_values/" },
+      { title: "Know Your Values", icon: Target, url: "https://web.mantracare.com/app/know_your_values/" },
       { title: "Gratitude Tracker", icon: Star, url: "https://web.mantracare.com/app/gratitude_tracker" },
-      { title: "Brain Dump & Sort", icon: Brain, url: "http://web.mantracare.com/app/brain_dump_and_sort" },
+      { title: "Brain Dump & Sort", icon: Brain, url: "https://web.mantracare.com/app/brain_dump_and_sort" },
       { title: "Personal Mission Statement", icon: Compass, url: "https://web.mantracare.com/app/personal_mission_statement" },
     ],
     resources: [
@@ -264,7 +264,7 @@ const topicDetails: Record<string, {
     todos: [
       { title: "Physical Activity Log", icon: Activity, url: "https://web.mantracare.com/app/physical_activity_log" },
       { title: "Energy Tracker", icon: Zap, url: "https://web.mantracare.com/app/energy_tracker" },
-      { title: "Brain Dump & Sort", icon: Brain, url: "http://web.mantracare.com/app/brain_dump_and_sort" },
+      { title: "Brain Dump & Sort", icon: Brain, url: "https://web.mantracare.com/app/brain_dump_and_sort" },
       { title: "Daily Self Care Tracker", icon: Heart, url: "https://web.mantracare.com/app/daily_self_care_tracker" },
     ],
     resources: [
@@ -281,12 +281,12 @@ const topicDetails: Record<string, {
       { title: "Pause for Appreciation", icon: Pause, url: "https://platform.mantracare.com/pause_for_appreciation?lang=en" },
       { title: "Guided Imagery", icon: Play, url: "https://web.mantracare.com/mindfulness/media/203/1" },
       { title: "Affirmations", icon: Smile, url: "https://platform.mantracare.com/affirmations/?lang=en" },
-      { title: "Grounding", icon: Compass, url: "http://platform.mantracare.com/5-4-3-2-1-grounding" },
+      { title: "Grounding", icon: Compass, url: "https://platform.mantracare.com/5-4-3-2-1-grounding" },
     ],
     todos: [
       { title: "Gratitude Tracker", icon: Star, url: "https://web.mantracare.com/app/gratitude_tracker" },
       { title: "Daily Self Care Tracker", icon: Heart, url: "https://web.mantracare.com/app/daily_self_care_tracker" },
-      { title: "Brain Dump & Sort", icon: Brain, url: "http://web.mantracare.com/app/brain_dump_and_sort" },
+      { title: "Brain Dump & Sort", icon: Brain, url: "https://web.mantracare.com/app/brain_dump_and_sort" },
       { title: "Letter to Self", icon: Mail, url: "https://web.mantracare.com/app/letter_to_self" },
     ],
     resources: [
@@ -301,13 +301,13 @@ const topicDetails: Record<string, {
     guidedSeriesUrl: "https://app.mantracare.com/therapy/anger/angr-guided-series/",
     exercises: [
       { title: "Box Breathing", icon: Wind, url: "https://platform.mantracare.com/box_breathing/?lang=en" },
-      { title: "Grounding", icon: Compass, url: "http://platform.mantracare.com/5-4-3-2-1-grounding" },
+      { title: "Grounding", icon: Compass, url: "https://platform.mantracare.com/5-4-3-2-1-grounding" },
       { title: "Diffusion Techniques", icon: Brain, url: "https://platform.mantracare.com/diffusion_techniques/" },
       { title: "Doodle Burst", icon: Pen, url: "https://web.mantracare.com/app/doodle_burst" },
     ],
     todos: [
       { title: "Vibe Tracker", icon: TrendingUp, url: "https://web.mantracare.com/app/vibe_tracker" },
-      { title: "Brain Dump & Sort", icon: Brain, url: "http://web.mantracare.com/app/brain_dump_and_sort" },
+      { title: "Brain Dump & Sort", icon: Brain, url: "https://web.mantracare.com/app/brain_dump_and_sort" },
       { title: "Thought Shifts", icon: RefreshCw, url: "https://platform.mantracare.com/thought_shifts" },
       { title: "Energy Tracker", icon: Zap, url: "https://web.mantracare.com/app/energy_tracker" },
     ],
@@ -324,12 +324,12 @@ const topicDetails: Record<string, {
     exercises: [
       { title: "Letter to Self", icon: Mail, url: "https://web.mantracare.com/app/letter_to_self" },
       { title: "Guided Imagery", icon: Play, url: "https://web.mantracare.com/mindfulness/media/203/1" },
-      { title: "Grounding", icon: Compass, url: "http://platform.mantracare.com/5-4-3-2-1-grounding" },
+      { title: "Grounding", icon: Compass, url: "https://platform.mantracare.com/5-4-3-2-1-grounding" },
       { title: "Affirmations", icon: Smile, url: "https://platform.mantracare.com/affirmations/?lang=en" },
     ],
     todos: [
       { title: "Gratitude Tracker", icon: Star, url: "https://web.mantracare.com/app/gratitude_tracker" },
-      { title: "Brain Dump & Sort", icon: Brain, url: "http://web.mantracare.com/app/brain_dump_and_sort" },
+      { title: "Brain Dump & Sort", icon: Brain, url: "https://web.mantracare.com/app/brain_dump_and_sort" },
       { title: "Vibe Tracker", icon: TrendingUp, url: "https://web.mantracare.com/app/vibe_tracker" },
       { title: "Daily Self Care Tracker", icon: Heart, url: "https://web.mantracare.com/app/daily_self_care_tracker" },
     ],
@@ -344,14 +344,14 @@ const topicDetails: Record<string, {
     description: "Grounding and stabilization techniques to help manage trauma responses and build safety.",
     guidedSeriesUrl: "https://app.mantracare.com/therapy/ptsd/ptsd-guided-series/",
     exercises: [
-      { title: "Grounded Technique", icon: Compass, url: "http://platform.mantracare.com/grounded_technique" },
+      { title: "Grounded Technique", icon: Compass, url: "https://platform.mantracare.com/grounded_technique" },
       { title: "Box Breathing", icon: Wind, url: "https://platform.mantracare.com/box_breathing/?lang=en" },
       { title: "Diffusion Techniques", icon: Brain, url: "https://platform.mantracare.com/diffusion_techniques/" },
       { title: "Guided Imagery", icon: Play, url: "https://web.mantracare.com/mindfulness/media/203/1" },
     ],
     todos: [
       { title: "Vibe Tracker", icon: TrendingUp, url: "https://web.mantracare.com/app/vibe_tracker" },
-      { title: "Brain Dump & Sort", icon: Brain, url: "http://web.mantracare.com/app/brain_dump_and_sort" },
+      { title: "Brain Dump & Sort", icon: Brain, url: "https://web.mantracare.com/app/brain_dump_and_sort" },
       { title: "Energy Tracker", icon: Zap, url: "https://web.mantracare.com/app/energy_tracker" },
       { title: "Thought Shifts", icon: RefreshCw, url: "https://platform.mantracare.com/thought_shifts" },
     ],
@@ -373,9 +373,9 @@ const topicDetails: Record<string, {
     ],
     todos: [
       { title: "Letter to Self", icon: Mail, url: "https://web.mantracare.com/app/letter_to_self" },
-      { title: "Know Your Values", icon: Target, url: "http://web.mantracare.com/app/know_your_values/" },
+      { title: "Know Your Values", icon: Target, url: "https://web.mantracare.com/app/know_your_values/" },
       { title: "Gratitude Tracker", icon: Star, url: "https://web.mantracare.com/app/gratitude_tracker" },
-      { title: "Brain Dump & Sort", icon: Brain, url: "http://web.mantracare.com/app/brain_dump_and_sort" },
+      { title: "Brain Dump & Sort", icon: Brain, url: "https://web.mantracare.com/app/brain_dump_and_sort" },
     ],
     resources: [
       { title: "Articles", count: 16, icon: Newspaper, url: "https://platform.mantracare.com/acceptance_articles/?lang=en" },
@@ -391,13 +391,13 @@ const topicDetails: Record<string, {
       { title: "Guided Imagery", icon: Play, url: "https://web.mantracare.com/mindfulness/media/203/1" },
       { title: "Affirmations", icon: Smile, url: "https://platform.mantracare.com/affirmations/?lang=en" },
       { title: "Box Breathing", icon: Wind, url: "https://platform.mantracare.com/box_breathing/?lang=en" },
-      { title: "Grounding", icon: Compass, url: "http://platform.mantracare.com/5-4-3-2-1-grounding" },
+      { title: "Grounding", icon: Compass, url: "https://platform.mantracare.com/5-4-3-2-1-grounding" },
     ],
     todos: [
       { title: "Energy Tracker", icon: Zap, url: "https://web.mantracare.com/app/energy_tracker" },
       { title: "Daily Self Care Tracker", icon: Heart, url: "https://web.mantracare.com/app/daily_self_care_tracker" },
       { title: "Gratitude Tracker", icon: Star, url: "https://web.mantracare.com/app/gratitude_tracker" },
-      { title: "Brain Dump & Sort", icon: Brain, url: "http://web.mantracare.com/app/brain_dump_and_sort" },
+      { title: "Brain Dump & Sort", icon: Brain, url: "https://web.mantracare.com/app/brain_dump_and_sort" },
     ],
     resources: [
       { title: "Articles", count: 18, icon: Newspaper, url: "https://platform.mantracare.com/postpartum_articles/?lang=en" },
@@ -416,8 +416,8 @@ const topicDetails: Record<string, {
       { title: "Letter to Self", icon: Mail, url: "https://web.mantracare.com/app/letter_to_self" },
     ],
     todos: [
-      { title: "Know Your Values", icon: Target, url: "http://web.mantracare.com/app/know_your_values/" },
-      { title: "Brain Dump & Sort", icon: Brain, url: "http://web.mantracare.com/app/brain_dump_and_sort" },
+      { title: "Know Your Values", icon: Target, url: "https://web.mantracare.com/app/know_your_values/" },
+      { title: "Brain Dump & Sort", icon: Brain, url: "https://web.mantracare.com/app/brain_dump_and_sort" },
       { title: "Vibe Tracker", icon: TrendingUp, url: "https://web.mantracare.com/app/vibe_tracker" },
       { title: "Gratitude Tracker", icon: Star, url: "https://web.mantracare.com/app/gratitude_tracker" },
     ],
@@ -432,7 +432,7 @@ const topicDetails: Record<string, {
     description: "Supportive exercises and resources to build a healthier relationship with food and body image.",
     guidedSeriesUrl: "https://app.mantracare.com/therapy/eating-disorder/etn-guided-series/",
     exercises: [
-      { title: "Grounding", icon: Compass, url: "http://platform.mantracare.com/5-4-3-2-1-grounding" },
+      { title: "Grounding", icon: Compass, url: "https://platform.mantracare.com/5-4-3-2-1-grounding" },
       { title: "Diffusion Techniques", icon: Brain, url: "https://platform.mantracare.com/diffusion_techniques/" },
       { title: "Affirmations", icon: Smile, url: "https://platform.mantracare.com/affirmations/?lang=en" },
       { title: "Guided Imagery", icon: Play, url: "https://web.mantracare.com/mindfulness/media/203/1" },
@@ -440,7 +440,7 @@ const topicDetails: Record<string, {
     todos: [
       { title: "Energy Tracker", icon: Zap, url: "https://web.mantracare.com/app/energy_tracker" },
       { title: "Daily Self Care Tracker", icon: Heart, url: "https://web.mantracare.com/app/daily_self_care_tracker" },
-      { title: "Brain Dump & Sort", icon: Brain, url: "http://web.mantracare.com/app/brain_dump_and_sort" },
+      { title: "Brain Dump & Sort", icon: Brain, url: "https://web.mantracare.com/app/brain_dump_and_sort" },
       { title: "Gratitude Tracker", icon: Star, url: "https://web.mantracare.com/app/gratitude_tracker" },
     ],
     resources: [
@@ -455,7 +455,7 @@ const topicDetails: Record<string, {
     guidedSeriesUrl: "https://app.mantracare.com/therapy/ocd/ocd-guided-series/",
     exercises: [
       { title: "Diffusion Techniques", icon: Brain, url: "https://platform.mantracare.com/diffusion_techniques/" },
-      { title: "Grounded Technique", icon: Compass, url: "http://platform.mantracare.com/grounded_technique" },
+      { title: "Grounded Technique", icon: Compass, url: "https://platform.mantracare.com/grounded_technique" },
       { title: "Box Breathing", icon: Wind, url: "https://platform.mantracare.com/box_breathing/?lang=en" },
       { title: "Thought Shifts", icon: RefreshCw, url: "https://platform.mantracare.com/thought_shifts" },
     ],
