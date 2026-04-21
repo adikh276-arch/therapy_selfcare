@@ -31,6 +31,7 @@ export const router = createBrowserRouter([
     children: [
       // Public Route
       { index: true, element: <SelfCareResources /> },
+      { path: "topics/:topicId", element: <SelfCareResources /> },
       { path: "self-care", element: <Navigate to="/" replace /> },
       
       // Protected Routes

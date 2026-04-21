@@ -110,7 +110,13 @@ export function OCDPage() {
               <div className="flex items-center gap-2.5 mb-2">
                 {/* Back Arrow */}
                 <button
-                  onClick={() => navigate("/")}
+                  onClick={() => {
+                    if (window.parent !== window) {
+                      window.parent.postMessage({ action: 'exit' }, 'https://web.mantracare.com');
+                    } else {
+                      window.location.href = 'https://web.mantracare.com';
+                    }
+                  }}
                   className="w-9 h-9 rounded-xl flex items-center justify-center transition-colors flex-shrink-0 text-[#64748B] hover:bg-[#f3faff]"
                 >
                   <ChevronLeft size={24} />

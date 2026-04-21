@@ -163,7 +163,7 @@ export function MindfulnessSelfCare() {
                 {featuredContent.map((item, i) => (
                   <motion.button
                     key={i}
-                    onClick={() => navigate('/meditation-detail/1')}
+                    onClick={() => navigate(`/meditation-detail/${i}`)}
                     whileHover={{ y: -4 }}
                     whileTap={{ scale: 0.97 }}
                     initial={{ opacity: 0, y: 12 }}
@@ -245,7 +245,7 @@ export function MindfulnessSelfCare() {
                 {featuredContent.map((item, i) => (
                   <motion.button
                     key={i}
-                    onClick={() => navigate('/meditation-detail/1')}
+                    onClick={() => navigate(`/meditation-detail/${i + 10}`)}
                     whileHover={{ y: -4 }}
                     whileTap={{ scale: 0.97 }}
                     initial={{ opacity: 0, y: 12 }}
@@ -294,7 +294,7 @@ export function MindfulnessSelfCare() {
                 {browseByGoal.map((item, i) => (
                   <motion.button
                     key={i}
-                    onClick={() => navigate('/browse-by-goal-detail/1')}
+                    onClick={() => navigate(`/browse-by-goal-detail/${i}`)}
                     whileHover={{ y: -4 }}
                     whileTap={{ scale: 0.97 }}
                     initial={{ opacity: 0, y: 12 }}
@@ -403,7 +403,7 @@ export function MindfulnessSelfCare() {
                 {featuredCollections.map((item, i) => (
                   <motion.button
                     key={i}
-                    onClick={() => navigate('/collection-detail/1')}
+                    onClick={() => navigate(`/collection-detail/${i}`)}
                     whileHover={{ y: -4 }}
                     whileTap={{ scale: 0.97 }}
                     initial={{ opacity: 0, y: 12 }}

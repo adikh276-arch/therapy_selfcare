@@ -94,7 +94,7 @@ const selfCareToolCards: TopicCard[] = [
   { id: "mood-tracker", icon: Smile, label: "Mood Tracker", bgColor: "linear-gradient(135deg, #f59e0b 0%, #d97706 100%)", iconColor: "#F59E0B", url: "https://web.mantracare.com/app/mood_tracker" },
   { id: "gratitude-tracker", icon: Star, label: "Gratitude Tracker", bgColor: "linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%)", iconColor: "#FBBF24", url: "https://web.mantracare.com/app/gratitude_logs" },
   { id: "vibe-tracker", icon: Sparkles, label: "Vibe Tracker", bgColor: "linear-gradient(135deg, #ec4899 0%, #db2777 100%)", iconColor: "#EC4899", url: "https://web.mantracare.com/app/vibe_tracker" },
-  { id: "withdrawal-tracker", icon: TrendingUp, label: "Withdrawal Tracker", bgColor: "linear-gradient(135deg, #10b981 0%, #059669 100%)", iconColor: "#10B981", url: "http://web.mantracare.com/app/withdrawal_tracker" },
+  { id: "withdrawal-tracker", icon: TrendingUp, label: "Withdrawal Tracker", bgColor: "linear-gradient(135deg, #10b981 0%, #059669 100%)", iconColor: "#10B981", url: "https://web.mantracare.com/app/withdrawal_tracker" },
 ];
 
 const wellnessGuideCards: TopicCard[] = [
@@ -175,10 +175,18 @@ export function OCDSelfCare() {
                       whileTap={{ scale: 0.98 }}
                       onClick={() => {
                         if (tool.url) {
-                          if (tool.url.startsWith('/')) {
-                            navigate(tool.url);
+                          if (tool.url.startsWith('/') || !tool.url.includes('web.mantracare.com')) {
+                            if (tool.url.startsWith('/')) {
+                              navigate(tool.url);
+                            } else {
+                              window.location.href = tool.url;
+                            }
                           } else {
-                            window.location.href = tool.url;
+                            if (window.parent !== window) {
+                              window.parent.postMessage({ action: 'exit', url: tool.url }, 'https://web.mantracare.com');
+                            } else {
+                              window.location.href = tool.url;
+                            }
                           }
                         }
                       }}
@@ -216,10 +224,18 @@ export function OCDSelfCare() {
                       whileTap={{ scale: 0.98 }}
                       onClick={() => {
                         if (topic.url) {
-                          if (topic.url.startsWith('/')) {
-                            navigate(topic.url);
+                          if (topic.url.startsWith('/') || !topic.url.includes('web.mantracare.com')) {
+                            if (topic.url.startsWith('/')) {
+                              navigate(topic.url);
+                            } else {
+                              window.location.href = topic.url;
+                            }
                           } else {
-                            window.location.href = topic.url;
+                            if (window.parent !== window) {
+                              window.parent.postMessage({ action: 'exit', url: topic.url }, 'https://web.mantracare.com');
+                            } else {
+                              window.location.href = topic.url;
+                            }
                           }
                         }
                       }}
@@ -261,10 +277,18 @@ export function OCDSelfCare() {
                       whileTap={{ scale: 0.98 }}
                       onClick={() => {
                         if (guide.url) {
-                          if (guide.url.startsWith('/')) {
-                            navigate(guide.url);
+                          if (guide.url.startsWith('/') || !guide.url.includes('web.mantracare.com')) {
+                            if (guide.url.startsWith('/')) {
+                              navigate(guide.url);
+                            } else {
+                              window.location.href = guide.url;
+                            }
                           } else {
-                            window.location.href = guide.url;
+                            if (window.parent !== window) {
+                              window.parent.postMessage({ action: 'exit', url: guide.url }, 'https://web.mantracare.com');
+                            } else {
+                              window.location.href = guide.url;
+                            }
                           }
                         }
                       }}

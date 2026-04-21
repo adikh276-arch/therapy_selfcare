@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import { motion, AnimatePresence } from "motion/react";
 import { MobileNav } from "./MobileNav";
 import { 
@@ -476,8 +476,8 @@ const topicDetails: Record<string, {
 
 export function SelfCareResources() {
   const navigate = useNavigate();
+  const { topicId: selectedTopic } = useParams();
   const [selectedMood, setSelectedMood] = useState<string | null>(null);
-  const [selectedTopic, setSelectedTopic] = useState<string | null>(null);
 
   const container = {
     hidden: { opacity: 0 },
@@ -518,7 +518,7 @@ export function SelfCareResources() {
                     animate={{ opacity: 1, y: 0 }}
                   >
                     <button
-                      onClick={() => setSelectedTopic(null)}
+                      onClick={() => navigate("/")}
                       className="flex items-center gap-2 mb-6 text-[#64748B] hover:text-[#020817] transition-colors group"
                     >
                       <ChevronLeft size={20} strokeWidth={2} className="group-hover:-translate-x-1 transition-transform" />
@@ -797,7 +797,15 @@ export function SelfCareResources() {
                       whileTap={{ scale: 0.98 }}
                       onClick={() => {
                         if (tool.url) {
-                          window.location.href = tool.url;
+                          if (tool.url.startsWith('/') || !tool.url.includes('web.mantracare.com')) {
+                            window.location.href = tool.url;
+                          } else {
+                            if (window.parent !== window) {
+                              window.parent.postMessage({ action: 'exit', url: tool.url }, 'https://web.mantracare.com');
+                            } else {
+                              window.location.href = tool.url;
+                            }
+                          }
                         }
                       }}
                       className="rounded-2xl p-5 shadow-sm flex flex-col items-start justify-between h-28"
@@ -834,9 +842,9 @@ export function SelfCareResources() {
                       whileTap={{ scale: 0.98 }}
                       onClick={() => {
                         if (topic.id === 'ocd') {
-                          window.location.href = 'https://web.mantracare.com/wp/selfcare-ocd';
+                          navigate('/ocd');
                         } else {
-                          setSelectedTopic(topic.id);
+                          navigate(`/topics/${topic.id}`);
                         }
                       }}
                       className="bg-white border border-[#E2E8F0] rounded-2xl p-6 hover:shadow-md transition-all text-center"
